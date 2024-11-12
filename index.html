@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Lauren Auer">
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+			<form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+				<label for="my-name">Name<span class="required">*</span></label>
+				<input type="text" name="my-name" id="my-name" required>
+				<label for="my-state">State<span class="required">*</span></label>
+				<div id="arrow">
+					<select name="my-state" id="my-state">
+					<option value="">Choose Your State</option>
+					<option value="al">AL</option>
+					<option value="ak">AK</option>
+					<option value="az">AZ</option>
+					<option value="ar">AR</option>
+					<option value="ca">CA</option>
+					<option value="co">CO</option>
+					<option value="ct">CT</option>
+					<option value="de">DE</option>
+					<option value="dc">DC</option>
+					<option value="fl">FL</option>
+					<option value="ga">GA</option>
+					<option value="hi">HI</option>
+					<option value="id">ID</option>
+					<option value="il">IL</option>
+					<option value="in">IN</option>
+					<option value="ia">IA</option>
+					<option value="ks">KS</option>
+					<option value="ky">KY</option>
+					<option value="la">LA</option>
+					<option value="me">ME</option>
+					<option value="md">MD</option>
+					<option value="ma">MA</option>
+					<option value="mi">MI</option>
+					<option value="mn">MN</option>
+					<option value="ms">MS</option>
+					<option value="mo">MO</option>
+					<option value="mt">MT</option>
+					<option value="ne">NE</option>
+					<option value="nv">NV</option>
+					<option value="nh">NH</option>
+					<option value="nj">NJ</option>
+					<option value="nm">NM</option>
+					<option value="ny">NY</option>
+					<option value="nc">NC</option>
+					<option value="nd">ND</option>
+					<option value="oh">OH</option>
+					<option value="ok">OK</option>
+					<option value="or">OR</option>
+					<option value="pa">PA</option>
+					<option value="ri">RI</option>
+					<option value="sc">SC</option>
+					<option value="sd">SD</option>
+					<option value="tn">TN</option>
+					<option value="tx">TX</option>
+					<option value="ut">UT</option>
+					<option value="vt">VT</option>
+					<option value="va">VA</option>
+					<option value="wa">WA</option>
+					<option value="wv">WV</option>
+					<option value="wi">WI</option>
+					<option value="wy">WY</option>
+				</select>
+				</div>
+				<label for="my-phone">Phone</label>
+				<input type="tel" name="my-phone" id="my-phone">
+				<label for="my-email">Email</label>
+				<input type="email" name="my-email" id="my-email" required>
+				<fieldset>
+					<legend>Preferred Method of Contact<span class="required">*</span></legend>
+					<input type="radio" name="contact-pref" id="pref-email" checked>
+					<label for="pref-email">Email</label>
+					<input type="radio" name="contact-pref" id="pref-phone">
+					<label for="pref-phone">Phone</label>
+				</fieldset>
+				<label for="my-comments">Comments</label>
+				<textarea name="my-comments" id="my-comments"></textarea>
+				
+				<input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2024 - GIT414</p>
+	</footer>
+</body>
+</html>
